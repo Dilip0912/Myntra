@@ -377,3 +377,6 @@ a.action_container:link {
   height: 14px;
   cursor: pointer;
 }
+.remove-btn{
+  background-color: rgb(234, 91, 91);
+}
