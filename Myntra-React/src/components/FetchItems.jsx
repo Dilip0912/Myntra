@@ -21,13 +21,13 @@ const FetchItems = () => {
       .then(({items}) => {
           dispatch(fetchStatusActions.markFetched())
           // console.log("Items from backend",items);
+          dispatch(fetchStatusActions.markFetchingEnded());
           dispatch(itemsActions.addInitialItems(items))
         });
         
-        dispatch(fetchStatusActions.markFetchingStarted());
         }, [fetchStatus]);
 
-  return <div>Fetching:{fetchStatus.fetched}</div>;
+//   return <div>Fetching:{fetchStatus.fetched}</div>;
 };
 
 export default FetchItems;
