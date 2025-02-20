@@ -3,6 +3,7 @@ import HomeItem from "../components/HomeItems";
 const Home = () => {
 
   const items=useSelector(store=>store.items);
+  // console.log(items);
 
   return (
     <main>
